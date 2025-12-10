@@ -36,9 +36,9 @@ Double-clicking a cell opens a popup showing the cell's position and value (e.g.
 
 ##  Technical Stack
 
-- **.NET 8.0** - Target framework
+- **.NET 8** - Target framework
 - **WPF** - Windows Presentation Foundation
-- **C# 12.0** - Programming language
+- **C# ** - Programming language
 - **MVVM Pattern** - Model-View-ViewModel architecture
 - **Serilog** - Logging framework
 
