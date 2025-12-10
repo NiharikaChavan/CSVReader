@@ -19,16 +19,14 @@ This application provides a simple and efficient way to load, view, and interact
 
 ### Main Window
 ![Main Window](Files/Load.png)
-*The main interface showing CSV data in a DataGrid with Upload and Load CSV buttons.*
+
 
 ### Cell Detail Popup
 ![Cell Popup](Files/DoubleClick.png)
-*Double-clicking a cell displays its value in a popup window with the cell position.*
+
 
 ### Logging
 ![Logging](Files/Logging.png)
-*Used Serilog logging*
->>>>>>> 3a0a468 (New Changes on CSV Raeder)
 
 ### Main Window
 The application displays CSV data in a grid format with Upload and Load CSV buttons.
