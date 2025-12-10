@@ -1,16 +1,13 @@
-<<<<<<< HEAD
+
 # CSV Reader Application
 
 A Windows Presentation Foundation (WPF) application for reading and viewing CSV files with an user interface.
 
-## 📋 Description
+##  Description
 
 This application provides a simple and efficient way to load, view, and interact with CSV (Comma-Separated Values) files. Built with .NET 8 and WPF, it demonstrates modern C# programming practices including MVVM pattern, error handling, and comprehensive logging.
 
-<<<<<<< HEAD
 ## Features
->>>>>>> 3a0a468 (New Changes on CSV Raeder)
-
 - **CSV File Loading**: Automatically loads a sample CSV file on startup
 - **File Browser**: Browse and select any CSV file from your system
 - **Interactive Grid**: View CSV data in a clean, responsive DataGrid
@@ -39,8 +36,7 @@ The application displays CSV data in a grid format with Upload and Load CSV butt
 ### Cell Detail Window
 Double-clicking a cell opens a popup showing the cell's position and value (e.g., "Cell [1,2]").
 
-<<<<<<< HEAD
-## 🛠️ Technical Stack
+##  Technical Stack
 
 - **.NET 8.0** - Target framework
 - **WPF** - Windows Presentation Foundation
@@ -48,7 +44,7 @@ Double-clicking a cell opens a popup showing the cell's position and value (e.g.
 - **MVVM Pattern** - Model-View-ViewModel architecture
 - **Serilog** - Logging framework
 
-## 📦 NuGet Packages
+##  NuGet Packages
 =======
 ## Technical Stack
 
@@ -61,13 +57,6 @@ Double-clicking a cell opens a popup showing the cell's position and value (e.g.
 ## NuGet Packages
 - `Serilog 4.3.0` - Structured logging
 - `Serilog.Sinks.File 7.0.0` - File output for logs
-
-
-### Prerequisites
-
-- Windows 10/11
-=======
-## Getting Started
 
 ### Prerequisites
 - .NET 8.0 SDK or later
