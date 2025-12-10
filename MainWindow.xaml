@@ -1,0 +1,68 @@
+﻿<Window x:Class="CSVReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSVReader"
+        xmlns:utils="clr-namespace:CSVReader.Utilities"
+        xmlns:vm="clr-namespace:CSVReader.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,8">
+            <Button Content="Upload" Command="{Binding BrowseCsvCommand}" Margin="0,0,8,0"/>
+            <Button Content="Load CSV" Command="{Binding LoadCsvCommand}" Margin="0,0,8,0"/>
+            <TextBlock VerticalAlignment="Center" Foreground="Gray"/>
+        </StackPanel>
+
+        <DataGrid Grid.Row="1"
+                  Name="DataGrid"
+                  ItemsSource="{Binding TableView}"
+                  AutoGenerateColumns="True"
+                  IsReadOnly="True"
+                  SelectionUnit="Cell"
+                  ColumnWidth="*"
+                  utils:DoubleClick.CellDoubleClickCommand="{Binding CellDoubleClickCommand}"
+                  GridLinesVisibility="None">
+
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#FFF5F5F5"/>
+                    <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                    <Setter Property="BorderBrush" Value="Gray"/>
+                    <Setter Property="Padding" Value="6,2"/>
+                    <Setter Property="FontWeight" Value="Normal"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                </Style>
+
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Padding" Value="4,0,4,0"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        <TextBox Grid.Row="2"
+                 Margin="0,8,0,0"
+                 Text="{Binding StatusMessage, UpdateSourceTrigger=PropertyChanged}"
+                 Foreground="DarkSlateGray"
+                 Background="Transparent"
+                 BorderThickness="0"
+                 IsReadOnly="True"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto"
+                 MinHeight="24"/>
+
+    </Grid>
+</Window>

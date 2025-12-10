@@ -1,0 +1,33 @@
+﻿<Window x:Class="CSVReader.Views.Cell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding Title}"
+        WindowStyle="ToolWindow"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner"
+        SizeToContent="WidthAndHeight"
+        Background="White"
+        BorderBrush="Black"
+        BorderThickness="1">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding Value}"
+                   FontSize="20"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Margin="0,5,0,5"/>
+        <Button Grid.Row="2"
+                Content="OK"
+                Width="80"
+                Padding="5"
+                HorizontalAlignment="Center"
+                Margin="0,10,0,0"
+                Click="Close_Click"/>
+    </Grid>
+</Window>
