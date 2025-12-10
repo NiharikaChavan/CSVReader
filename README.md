@@ -42,8 +42,6 @@ Double-clicking a cell opens a popup showing the cell's position and value (e.g.
 - **MVVM Pattern** - Model-View-ViewModel architecture
 - **Serilog** - Logging framework
 
-##  NuGet Packages
-=======
 ## Technical Stack
 
 - **.NET 8.0** - Target framework
