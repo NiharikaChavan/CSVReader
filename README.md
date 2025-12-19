@@ -34,14 +34,6 @@ The application displays CSV data in a grid format with Upload and Load CSV butt
 ### Cell Detail Window
 Double-clicking a cell opens a popup showing the cell's position and value (e.g., "Cell [1,2]").
 
-##  Technical Stack
-
-- **.NET 8** - Target framework
-- **WPF** - Windows Presentation Foundation
-- **C# ** - Programming language
-- **MVVM Pattern** - Model-View-ViewModel architecture
-- **Serilog** - Logging framework
-
 ## Technical Stack
 
 - **.NET 8.0** - Target framework
